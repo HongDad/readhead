@@ -1,0 +1,3 @@
+# Project exclude paths
+/socket/target/
+/yarnmanage/target/
