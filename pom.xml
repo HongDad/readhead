@@ -13,6 +13,7 @@
         <module>flink</module>
         <module>yarnmanage</module>
         <module>common</module>
+        <module>algo</module>
     </modules>
 
 
