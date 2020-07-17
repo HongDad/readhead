@@ -19,7 +19,7 @@ object HttpUntils {
     for ((key, value) <- header) {
       request.header(key, value)
     }
-     request.postData(body).asString
+     request.postData(body.getBytes).asString
   }
 
   //从接口拿取数据,通过get的方式
