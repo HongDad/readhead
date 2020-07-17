@@ -14,7 +14,13 @@
         <module>yarnmanage</module>
         <module>common</module>
         <module>algo</module>
+        <module>scala</module>
     </modules>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flink.version>1.10.1</flink.version>
+        <log4j.version>1.7.7</log4j.version>
+        <slf4j.version>1.2.17</slf4j.version>
+    </properties>
 
 </project>
