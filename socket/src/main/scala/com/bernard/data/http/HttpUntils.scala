@@ -18,8 +18,19 @@ object HttpUntils {
     val str = getOrigin(url1)
     val nObject = JSON.parseObject(str)
     val apps = nObject.getJSONObject("apps").getJSONArray("app")
-    for (i <- 0 until apps.size()){
-     val app = apps.getJSONObject(i)
+    for (i <- 0 until apps.size()) {
+      val app = apps.getJSONObject(i)
+      val finalStatus = app.getString("finalStatus")
+      val id = app.getString("id")
+      val state = app.getString("state")
+      val elapsedTime = app.getLong("elapsedTime")
+      val applicationType = app.getString("applicationType")
+      if ("RUNNING".equals(state)){
+        if ((elapsedTime/3600000)>6){
+
+           // postHead(url,"")
+        }
+      }
     }
   }
 

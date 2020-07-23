@@ -15,6 +15,8 @@
         <module>common</module>
         <module>algo</module>
         <module>scala</module>
+        <module>api</module>
+        <module>sparksql</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
